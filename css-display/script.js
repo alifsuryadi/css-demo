@@ -11,6 +11,8 @@ const inlineBlockWidthSlider = document.getElementById(
   "inline-block-width-slider"
 );
 
+const paragrafOutput = document.getElementById("note");
+
 const blockHeightOutput = document.getElementById("block-height-output");
 const blockWidthOutput = document.getElementById("block-width-output");
 
@@ -44,12 +46,16 @@ inlineHeightSlider.addEventListener("input", () => {
   const heightValue = inlineHeightSlider.value + "px";
   inlineElement.style.height = heightValue;
   inlineHeightOutput.textContent = inlineHeightSlider.value;
+  paragrafOutput.classList.add("note");
+  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 2000);
 });
 
 inlineWidthSlider.addEventListener("input", () => {
   const widthValue = inlineWidthSlider.value + "px";
   inlineElement.style.width = widthValue;
   inlineWidthOutput.textContent = inlineWidthSlider.value;
+  paragrafOutput.classList.add("note");
+  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 2000);
 });
 
 inlineBlockHeightSlider.addEventListener("input", () => {
