@@ -2,6 +2,10 @@
     --color : #ffa949
 }
 
+*{
+    margin: 0px;
+}
+
 body {
     font-family: sans-serif;
     background-color: #e3e3e3;
@@ -103,6 +107,7 @@ a{
 
 footer {
     background-color: #ccc;
+    margin: 5px 0px 10px;
     padding: 10px 0px;
     text-align: center;
     flex-grow: 0;
