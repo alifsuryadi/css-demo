@@ -115,6 +115,10 @@ footer {
     width: 100%;
 }
 
+.invisible {
+    opacity: 0.5;
+}
+
 footer p {
     margin: 0;
     font-size: 14px;

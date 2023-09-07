@@ -22,16 +22,19 @@ const warning = document.getElementById('alert');
 const backgroundColorful = document.getElementById('secret');
 const sepuhPatrix = document.getElementById('sepuh');
 const audioSepuh = document.getElementById('audio-container');
+const footerInv = document.getElementById('invisible');
 
 warning.addEventListener('click', ()=> {
     backgroundColorful.setAttribute("class", "secret");
     sepuhPatrix.style.display = "block";
     audioSepuh.style.display = "block";
-    warning.style.display = "none"
+    footerInv.setAttribute("class", "invisible");
+    warning.style.display = "none";
     setTimeout(function() {(
         backgroundColorful.setAttribute("class", " "),
         sepuhPatrix.style.display = "none",
-        audioSepuh.style.display = "none"
+        audioSepuh.style.display = "none",
+        footerInv.setAttribute("class", " ")
     )}, 21000);
 })
 
