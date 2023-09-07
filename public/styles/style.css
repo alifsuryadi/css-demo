@@ -4,7 +4,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: #f2f2f2;
+    background-color: #e3e3e3;
     overflow-x: hidden;
 }
 
@@ -102,9 +102,8 @@ a{
 
 
 footer {
-    margin-top: 30px;
     background-color: #ccc;
-    padding: 10px;
+    padding: 10px 0px;
     text-align: center;
     flex-grow: 0;
     flex-shrink: 0;
@@ -117,10 +116,120 @@ footer p {
 }
 
 
+.secret {
+    animation: changeBackground 2s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background: #FF5733;
+    }
+    25% {
+        background: #33FF57;
+    }
+    50% {
+        background: #5733FF;
+    }
+    75% {
+        background: #FF33E6;
+    }
+    100% {
+        background: #33E6FF;
+    }
+}
+
+.sepuh{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.rotating-scaling-img {
+    width: 100px;
+    height: 100px;
+    animation: scaleRotate 2s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes scaleRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    30% {
+        transform: scale(3) rotate(3600deg);
+    }
+
+    70%{
+        transform: scale(4) rotate(3600deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(0deg)
+    }
+}
+
+.audio-container {
+    display: none;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    bottom: 50px;
+    right: 75px;
+}
+    
+.play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.play-button::before {
+    content: "\25B6"; 
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+}
+
+.alert{
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 30px;
+    animation: scaleWarning 1s linear infinite;
+}
+
+.alert:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    animation: 1s;
+}
+
+@keyframes scaleWarning {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
 
 @media screen and (max-width:576px) {
     .container {
         height: 800px;
+    }
+
+    .audio-container {
+        bottom: 50px;
+        right: 50px;
     }
 }
 

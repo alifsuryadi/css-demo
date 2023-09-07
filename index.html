@@ -6,13 +6,12 @@
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS DEMO</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 
 <body>
 
-    <main>
+    <main class="" id="secret">
         <div class="container">
           <div class="waviy">
             <span style="--i:1">C</span>
@@ -23,7 +22,7 @@
             <span style="--i:6">E</span>
             <span style="--i:7">M</span>
             <span style="--i:8">O</span>
-           </div>
+          </div>
             <a class="item" href="./box-model/index.html">Box Model</a>
             <a class="item" href="./css-positioning/index.html">Positioning</a>
             <a class="item" href="./css-display/index.html">Display</a>
@@ -31,14 +30,29 @@
             <a class="item" href="./grid-vs-flexbox/index.html">Grid VS Flexbox</a>
             <a class="item" href="./grid-sizing/index.html">Grid Sizing</a>
 
+            <div class="sepuh" id="sepuh">
+              <img class="rotating-scaling-img" src="./public/images/puh sepuh hd.jpg" alt="Ajarin dong puh">
+            </div>
 
+            <div class="audio-container" id="audio-container">
+              <audio id="audio" preload="auto">
+                <source src="./public/audios/aku-mah-pemula-puh-sepuh-made-with-Voicemod-technology.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <button id="playButton" class="play-button"></button>
+            </div>
+            <div class="alert" id="alert"> <img src="./public/images/Alert triangle/alert-triangle.svg" alt="Warning"></div>
         </div>
+
+    
     </main>
 
     <footer>
         <p> Copyright &copy; 2023 | Bootcamp CX Frond-End</p>
     </footer>
   
+    
+    <script src="./public/javascript/index.js"></script>
 </body>
 
 </html>
