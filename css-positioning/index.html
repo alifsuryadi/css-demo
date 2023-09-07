@@ -14,64 +14,79 @@
   </header>
   <main>
     <div class="button-group">
-      <button class="button" id="static-btn">Static Positioning</button>
-      <button class="button" id="relative-btn">Relative Positioning</button>
-      <button class="button" id="absolute-btn">Absolute Positioning</button>
-      <button class="button" id="fixed-btn">Fixed Positioning</button>
+      <button class="button" id="static-btn">Static <br> Positioning</button>
+      <button class="button" id="relative-btn">Relative <br> Positioning</button>
+      <button class="button" id="absolute-btn">Absolute <br> Positioning</button>
+      <button class="button" id="fixed-btn">Fixed <br> Positioning</button>
+      <button class="button" id="sticky-btn">Sticky <br> Positioning</button>
     </div>
-    <div class="positioning-type static" style="display: block;">
-      <h2>Static Positioning</h2>
-      <code>
-        position: static;<br>
-        left: 50px;<br>
-        top: 50px;<br></code>
-      <div class="box"></div>
-    </div>
-    <div class="positioning-type relative">
-      <h2>Relative Positioning</h2>
-      <code>position: relative;<br />
-      left: 50px;<br/>
-      top: 50px;<br/></code>
-      <div class="box"></div>
-    </div>
-    <div class="positioning-type absolute">
-      <h2>Absolute Positioning</h2>
-      <code>
-          position: absolute;<br>
-          top: 50px;<br>
+    <div class="content"> 
+      <div class="positioning-type static" style="display: block;">
+        <h2>Static Positioning</h2>
+        <code>
+          position: static;<br>
           left: 50px;<br>
-      </code>
-      <div class="box"></div>
-    </div>
-    <div class="positioning-type fixed">
-      <h2>Fixed Positioning</h2>
-      <code>
-            position: fixed;<br>
+          top: 50px;<br></code>
+        <div class="box"></div>
+      </div>
+      <div class="positioning-type relative">
+        <h2>Relative Positioning</h2>
+        <code>position: relative;<br />
+        left: 50px;<br/>
+        top: 50px;<br/></code>
+        <div class="box"></div>
+      </div>
+      <div class="positioning-type absolute">
+        <h2>Absolute Positioning</h2>
+        <code>
+            position: absolute;<br>
             top: 50px;<br>
             left: 50px;<br>
-      </code>
-      <div class="box"></div>
+        </code>
+        <div class="box"></div>
+      </div>
+      <div class="positioning-type fixed">
+        <h2>Fixed Positioning</h2>
+        <code>
+              position: Fixed;<br>
+              top: 50px;<br>
+              left: 50px;<br>
+        </code>
+        <div class="box"></div>
+      </div>
+      <div class="positioning-type sticky">
+        <h2>Sticky Positioning</h2>
+        <code>
+              position: sticky;<br>
+              top: 50px;<br>
+              left: 50px;<br>
+        </code>
+        <div class="box"></div>
+      </div>
     </div>
   </main>
   <footer>
-    <p>&copy; Alif Suryadi</p>
+    <p><a href="https://github.com/alifsuryadi">&copy; Alif Suryadi</a></p>
   </footer>
   <script>
     const staticBtn = document.getElementById('static-btn');
     const relativeBtn = document.getElementById('relative-btn');
     const absoluteBtn = document.getElementById('absolute-btn');
     const fixedBtn = document.getElementById('fixed-btn');
+    const stickyBtn = document.getElementById('sticky-btn');
 
     const staticPositioning = document.querySelector('.static');
     const relativePositioning = document.querySelector('.relative');
     const absolutePositioning = document.querySelector('.absolute');
     const fixedPositioning = document.querySelector('.fixed');
+    const stickyPositioning = document.querySelector('.sticky');
 
     staticBtn.addEventListener('click', () => {
       staticPositioning.style.display = 'block';
       relativePositioning.style.display = 'none';
       absolutePositioning.style.display = 'none';
       fixedPositioning.style.display = 'none';
+      stickyPositioning.style.display = 'none';
     });
 
     relativeBtn.addEventListener('click', () => {
@@ -79,6 +94,7 @@
       relativePositioning.style.display = 'block';
       absolutePositioning.style.display = 'none';
       fixedPositioning.style.display = 'none';
+      stickyPositioning.style.display = 'none';
     });
 
     absoluteBtn.addEventListener('click', () => {
@@ -86,6 +102,7 @@
       relativePositioning.style.display = 'none';
       absolutePositioning.style.display = 'block';
       fixedPositioning.style.display = 'none';
+      stickyPositioning.style.display = 'none';
     });
 
     fixedBtn.addEventListener('click', () => {
@@ -93,6 +110,15 @@
       relativePositioning.style.display = 'none';
       absolutePositioning.style.display = 'none';
       fixedPositioning.style.display = 'block';
+      stickyPositioning.style.display = 'none';
+    });
+
+    stickyBtn.addEventListener('click', () => {
+      staticPositioning.style.display = 'none';
+      relativePositioning.style.display = 'none';
+      absolutePositioning.style.display = 'none';
+      fixedPositioning.style.display = 'none';
+      stickyPositioning.style.display = 'block';
     });
 
   </script>
