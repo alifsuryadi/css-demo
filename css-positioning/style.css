@@ -43,6 +43,14 @@ a{
   cursor: pointer;
 }
 
+.button:hover{
+  background-color: #009805;
+}
+
+.button:active{
+  background-color: #009805;
+}
+
 .positioning-type {
   display: block;
   width: 300px;
@@ -65,7 +73,7 @@ a{
   border: 1px solid #ccc;
 }
 
-/* Styles for the different types of positioning */
+
 .static .box {
   position: static;
   left: 50px;
@@ -96,7 +104,7 @@ a{
   left: 50px;
 }
 
-/* Styles for the footer */
+
 footer {
   background-color: #ccc;
   padding: 10px;
@@ -113,20 +121,3 @@ footer p {
   font-size: 14px;
   color: blue;
 }
-
-
-/* @media screen and (max-width:768px) {
-  .button-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width:576px) {
-  .button-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-} */

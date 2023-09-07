@@ -47,7 +47,7 @@ inlineHeightSlider.addEventListener("input", () => {
   inlineElement.style.height = heightValue;
   inlineHeightOutput.textContent = inlineHeightSlider.value;
   paragrafOutput.classList.add("note");
-  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 2000);
+  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 3000);
 });
 
 inlineWidthSlider.addEventListener("input", () => {
@@ -55,7 +55,7 @@ inlineWidthSlider.addEventListener("input", () => {
   inlineElement.style.width = widthValue;
   inlineWidthOutput.textContent = inlineWidthSlider.value;
   paragrafOutput.classList.add("note");
-  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 2000);
+  setTimeout(function() {(paragrafOutput.classList.remove("note"))}, 3000);
 });
 
 inlineBlockHeightSlider.addEventListener("input", () => {
