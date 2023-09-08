@@ -8,32 +8,38 @@
 </head>
 
 <body>
-    <div class="box" id="box">Div Box</div>
+    <header>
+      <h1>Box Model</h1>
+    </header>
 
-    <div>
-      <label for="box-sizing">Box Sizing:</label>
-      <select id="box-sizing">
-        <option value="content-box">Content Box</option>
-        <option value="border-box">Border Box</option>
-      </select>
-    </div>
+    <main>
+      <div class="box" id="box">Div Box</div>
 
-    <div class="controls">
-        <label for="marginSize">Margin:</label>
-        <input type="range" id="marginSize" min="0" max="50" step="1"> <br>
-        
-        <label for="paddingSize">Padding:</label>
-        <input type="range" id="paddingSize" min="0" max="50" step="1"> <br>
-        
-        <label for="borderSize">Border:</label>
-        <input type="range" id="borderSize" min="0" max="20" step="1"> <br>
-        
-        <label for="widthSize">Width:</label>
-        <input type="range" id="widthSize" min="50" max="300" step="10"> <br>
-        
-        <label for="heightSize">Height:</label>
-        <input type="range" id="heightSize" min="50" max="300" step="10"> <br>
-    </div>
+      <div>
+        <label for="box-sizing">Box Sizing:</label>
+        <select id="box-sizing">
+          <option value="content-box">Content Box</option>
+          <option value="border-box">Border Box</option>
+        </select>
+      </div>
+
+      <div class="controls">
+          <label for="marginSize">Margin:</label>
+          <input type="range" id="marginSize" min="0" max="50" step="1"> <br>
+          
+          <label for="paddingSize">Padding:</label>
+          <input type="range" id="paddingSize" min="0" max="50" step="1"> <br>
+          
+          <label for="borderSize">Border:</label>
+          <input type="range" id="borderSize" min="0" max="20" step="1"> <br>
+          
+          <label for="widthSize">Width:</label>
+          <input type="range" id="widthSize" min="50" max="300" step="10"> <br>
+          
+          <label for="heightSize">Height:</label>
+          <input type="range" id="heightSize" min="50" max="300" step="10"> <br>
+      </div>
+    </main>
     
     <script src="script.js"></script>
 </body>

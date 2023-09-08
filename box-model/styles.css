@@ -5,6 +5,17 @@ body {
     text-align: center;
 }
 
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+
 .box {
     background-color: #ffa949;
     color: #fff;
